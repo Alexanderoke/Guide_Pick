@@ -1,51 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <link rel="stylesheet" href="/app/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
 </head>
-<body style="color: white;background-color: black;">
-    <div class="container" style="text-align: center; padding-top: 80px;">
-        <div class="rows">
-            <div class="col-md-6">
+
+<body style="background-color: wheat;">
+
+    <!-- Header -->
+    <header>
+        <div class="row">
+            <div class="dropdown">
+                <h2 type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 150%;">Menu</h2>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">Home</a></li>
+                    <li class="dropdown-item"><a href="#about">About</a></li>
+                    <li class="dropdown-item"><a href="./auth/register.html">SignUp</a></li>
+                    <li class="dropdown-item"><a href="./auth/login.html">Login</a></li>
+                    <li class="dropdown-item"><a href="#foot">Contact</a></li>
+                </ul>
+            </div>
+
+            <h1>Guide_Pick</h1>
+
+        </div>
+    </header>
+    
+    <!-- Headline -->
+    <div class="container headline">
+        <!-- <div class="row"> -->
+            <div class="one">
                 <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Adventure</h1>
                 <p>Tour cities with exceptional local tour guides.</p>
             </div>
             <br>
             <br>
-            <div class="col-md-6">
+            <div class="one">
                 <label for="site-search">Location to visit :</label>
                 <br>
                 <input type="search" id="site-search" name="search" style="height: 30px; width:300px">
-                <button style="background-color: darkgreen;color: white;width: 90px; height: 40px;">Search</button> 
+                <button class="btn btn-success">Search</button>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
     <br>
     <br>
+    <!-- Popular Destination -->
     <div class="container">
-        <h2>Popular Destinations in Kenya</h2>
-        <div class="rows">
-            <div class="col-md-6">
+        <h2 class="text-center">Popular Destinations in Kenya</h2>
+        <br>
+        <div class="row destination">
+            <div class="col-md-4">
                 <div class="card">
                     <p>Mombasa</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <br>
+            <div class="col-md-4">
                 <div class="card">
                     <p>Malindi</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <br>
+            <div class="col-md-4">
                 <div class="card">
                     <p>Maasai Mara</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <br>
+            <div class="col-md-4">
+                <div class="card">
+                    <p>Nairobi</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <p>Mombasa</p>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <div class="card">
+                    <p>Malindi</p>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <div class="card">
+                    <p>Maasai Mara</p>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <div class="card">
+                    <p>Nairobi</p>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="card">
                     <p>Nairobi</p>
                 </div>
@@ -54,10 +110,54 @@
     </div>
     <br>
     <br>
-    <div class="container" style="text-align: center;">
+    <div class="ex" style="text-align: center;">
         <h3>Add your experience.</h3>
         <button style="text-align: center;background-color: darkgreen;color: white;width: 90px; height: 40px;">ADD.</button>
     </div>
+    
+    <!-- ABOUT US -->
+    <!-- <h2>About Us </h2> -->
+
+    <!-- <div style="background-color:darkgreen"> -->
+    <div class="container our" id="about">    
+        <div class="row one">
+            <p> WE ASPIRE TO CONNECT OUR VISITORS TO THEIR DESTINATIONS,THROUGH OUR LOCAL TOURGUIDES.</p>
+        </div>
+        <br><br>
+        <h2>OUR STORY</h2>
+
+        <div class="row one">
+            <p>There is no reason to just visit the same place every time when the locals are on your
+                finger-tips to show you more beautiful places around the city.</p>
+            <br>
+            <p>Show around is all about the activities that happens when you are not in your hotel room,and they can
+                start from the momment
+                you arrive at your destination.</p>
+                <p>From pick-up to depature,Guide_Pick can be at your side always.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <!-- Footer -->
+    <div class="row footer" id="foot" >
+        <div class="two">
+            <div class="col-md-6">
+                <h2>Contacts</h2>
+            </div>
+            <div class="col-md-6">
+                <ol>
+                Phone : +2542222722
+                <br>
+                Email : guides@guidepick.com
+                </ol> 
+            </div>
+        </div>
+        
+    </div> 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

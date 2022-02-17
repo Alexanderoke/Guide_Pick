@@ -9,3 +9,4 @@ def index():
     title='GUIDE_PICK!'
 
     return render_template('index.html',title=title)
+

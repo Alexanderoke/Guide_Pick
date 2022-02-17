@@ -1,3 +1,75 @@
-.intro{
+.headline{
+    background-image: url('./img/kili.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 25rem;
+    background-position-x: 100%;
+    /* background-position-y: 100%; */
+    margin-right: -7%;
+    /* margin-left: auto; */
+}
+.one{
     text-align: center;
+}
+body{
+    width: fit-content;
+    margin: 0%;
+}
+header .row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: green;
+    margin-right: -12%;
+    padding: 1%;
+}
+header h1{
+    /* font-size: 600%; */
+    text-align: center;
+}
+header h2{
+    font-size: 1000%;
+}
+
+.destination{
+    display: flex;
+    margin-left: 13%;
+}
+.ex{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.card{
+    margin: 2%;
+}
+.our{
+    text-align: center;
+    width: 70%;
+    margin-top: 7%;
+}
+.one{
+    text-align: center;
+}
+
+hr{
+    width: 50rem;
+    border-width: .3rem;
+    border-color: black;
+}
+
+.footer{
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* display: flex; */
+    padding: 2%;
+    /* background-color: gray; */
+    margin-left: 20%;
+    /* margin-right: 5%; */
+    margin-top: 5%;
+    width: 80%;
+}
+.two{
+   display: flex;
+   padding-inline-end: 3%;
+   align-content: center;
 }
