@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/alexander/Desktop/Moringa-school-Project/CORE/Guide_Pick/virtual"
+setenv VIRTUAL_ENV "/home/moringa/Documents/CORE/PYTHON/Group_Project/Guide_Pick/virtual"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
