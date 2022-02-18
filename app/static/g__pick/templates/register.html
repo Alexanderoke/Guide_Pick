@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+<div class="register">
+
+  {% block content %}
+    {{form.hidden_tag()}}
+    <div class="content-section ">
+      <legend class="border-bottom mb-4 " >Register As Guide</legend>
+
+      <form class="col-6">
+        <div class="row">
+          <div class="col">
+            {{form.Name.label(class="form-control-label")}}
+        {{form.Name(class="")}}
+          </div>
+          <div class="col-2">
+            {{form.email.label(class="form-control-label")}}
+          {{form.email(class="")}}
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col">
+            {{form.password.label(class="form-control-label")}}
+          {{form.password(class="")}}            
+          </div>
+          <div class="col-2">
+            {{form.confirm_password.label(class="form-control-label")}}
+          {{form.confirm_password(class="")}}            
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col">
+            {{form.location.label(class="form-control-label")}}
+          {{form.location(class="")}}            
+          </div>
+          <div class="col-2">
+            {{form.languages.label(class="form-control-label")}}
+          {{form.languages(class="")}}            
+          </div>
+        </div>
+
+                
+        <div class="row">
+          <div class="col">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                male
+              </label>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Female
+              </label>
+            </div>
+          </div>          
+          
+        </div>
+        <div class="col-6">
+          {{form.submit(class="btn btn-primary")}}
+        </div>
+      </form>
+
+    </div>
+
+{% endblock %}
+
+</div>
